@@ -9,13 +9,13 @@ html {
 }
 body {
   background: #000000;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   position: relative;
   display: grid;
-  grid-template-columns: 1fr [center-start] repeat(8, 20rem) [center-end] 1fr;
-  grid-template-rows: 14rem repeat(8, 1fr);
-  grid-gap: 2rem;
+  grid-template-columns: 1fr [center-start] repeat(8, 15rem) [center-end] 1fr;
+  grid-template-rows: 14rem repeat(10, 1fr);
+  grid-gap: 4rem;
 }
 h1 {
   font-weight: 600;
@@ -52,5 +52,11 @@ h1 span {
 }
 .iframe-4 {
   grid-column: 5 / span 4;
-  grid-row: 5 / 3;
+  grid-row: 5 / 4;
+}
+
+.s {
+  grid-column: center-start / center-end;
+  grid-row: 6 / -1;
+  width: 77%;
 }
