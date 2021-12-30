@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+h1 {
+  font-weight: 600;
+  font-size: 6rem;
+  padding: 2rem;
+  color: white;
+}
+h1 span {
+  font-weight: 600;
+  background-color: #ff9000;
+  color: #000000;
+  border-radius: 5px;
+  /* padding: 1rem; */
+}
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, min-content);
+}
+
+.video > * {
+  margin-left: 2rem;
+}
